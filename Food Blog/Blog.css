@@ -185,7 +185,7 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #d1d1e0;
+    background: #333333;
     display: flex;
     flex-direction: column;
 }
@@ -201,7 +201,7 @@ footer{
 }
 
 .photos{
-    background: #d1d1e0;
+    background: #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,16 +209,90 @@ footer{
     padding: 7px;
 }
 .photos img{
-    background: #d1d1e0;
+    background: #333333;
      width: 300px;
      height: 40vh;
      margin: 10px 11.6px;
  }
  .photos img:hover{
-    box-shadow: 5px 5px  #8cff66;
+    box-shadow: 5px 5px  purple;
     transition-duration: 0.75s;
  }
 
+/*Contact*/
+.container{
+    padding: 80px;
+    background: url(./16.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+form{
+    font-size: 15px;
+    font-family: var(--Titillium);
+    width: 50%;
+    padding: 10px;
+    display: block;
+    border-radius:7px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: white;
+    opacity: 0.8;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  font-size: 15px;
+  width: 50%;
+  padding: 7px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: none;
+  border-radius:4px;
+  background: #f1f1f1;
+  font-family: verdana;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=text], input[type=number] {
+    font-size: 15px;
+    width: 50%;
+    padding: 7px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    border-radius:4px;
+    background: #f1f1f1;
+    font-family: verdana;
+}
+
+input[type=checkbox]{
+    font-size: 15px;
+    width: 50%;
+    height: 10px;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius:4px;
+    background: #f1f1f1;
+    font-family: verdana;
+}
+
+.comment {
+    width: 70%;
+    padding: 15px;
+    border-radius:4px;
+    display: block;
+    display: inline-block;
+    font-family: var(--Titillium);
+    font-size: 15px;
+    background-color:white;
+  }
 
 /* Mobile */
 @media(max-width: 768px) {
@@ -264,6 +338,10 @@ footer{
 
     }
 
+    .note{
+        padding: 100px;
+    }
+
     .column p{
         padding: 5px;
     }
@@ -278,6 +356,21 @@ footer{
         padding: 2px;
     }
     .team img {
-        width: 70%;
+        width: 70%;5+
+    }
+
+    .container{
+        padding-top: 100px;
+    }
+    form p{
+        display: none;
+    }
+    input[type=text], input[type=password] {
+        width: 100%;
+    }
+
+    .comment {
+        width: 100%;
+        height: 50%;
     }
 }
