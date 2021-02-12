@@ -388,4 +388,10 @@ input[type=checkbox]{
         height: 30px;
         font-size: 9px;
     }
+    .button{
+        width: 20%;
+        height: 25px;
+        background-color: #4CAF50;
+        font-size: 9px
+    }
 }
