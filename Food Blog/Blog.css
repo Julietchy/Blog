@@ -296,6 +296,7 @@ input[type=checkbox]{
     align-items: center;
     text-align: center;
     font-size: 17px;
+    font-family: var(--Titillium);
     border: none;
     border-radius:4px;
     background-color: #4CAF50;
